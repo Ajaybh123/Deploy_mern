@@ -10,6 +10,7 @@ import { setUserDetails } from './store/userSlice';
 const App = () => {
   const dispatch = useDispatch()
   const [cartProductCount, setCartProductCount] = useState(0)
+  axios.defualts.withCredentials = true;
   const fetchUserDetails = async () => {
     const dataResponse = await fetch(SummaryApi.current_user.url, {
       method: SummaryApi.current_user.method,

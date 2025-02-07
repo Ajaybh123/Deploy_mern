@@ -1,5 +1,5 @@
 
-const backendDomin = "deploy-mern-api-navy.vercel.app"
+const backendDomin = "https://deploy-mern-api-navy.vercel.app"
 const SummaryApi = {
     SignUp: {
         url: `${backendDomin}/api/signup`,

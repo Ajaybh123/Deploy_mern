@@ -11,6 +11,7 @@ const router = require('./routes')
 const app = express();
 app.use(cors({
     origin: process.env.FROENTEND_URL,
+    methods: ["POST","GET"],
     credentials: true
 }));
 
